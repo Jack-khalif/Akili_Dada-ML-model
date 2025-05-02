@@ -1,39 +1,100 @@
-# Akili_Dada-ML-model  WiDS 2025 Datathon — Brain Health Prediction
+Here’s a professional and visually engaging `README.md` template tailored for your **WiDS 2025 Kaggle Brain Health Competition** submission. It includes image previews, project summary, methods, results, and links — perfect for GitHub and LinkedIn showcase.
 
-This repository contains our solution to the [WiDS Datathon 2025](https://www.kaggle.com/competitions/widsdatathon2025) hosted on Kaggle. The challenge focused on predicting **female brain health outcomes** (ADHD and Sex) from clinical and demographic data using machine learning techniques.
+---
 
-## Competition Objective
-To build a predictive model that determines:
-- Whether a participant has **ADHD**
-- The **biological sex** of a participant  
-using anonymized clinical measurements.
+## 🧠 WiDS 2025: Brain Health Prediction
 
-## Tools & Technologies Used
-- Python 
-- XGBoost (classification)
-- SHAP (model explainability)
-- Scikit-learn (preprocessing, metrics, CV)
-- Pandas / NumPy
-- Multilabel Stratified K-Fold CV
-- Kaggle Notebooks
+Predicting ADHD and Sex from cognitive and neurological features using tree-based machine learning models.
 
-## Our Approach
-- **Data preprocessing**: Missing value imputation, label encoding
-- **Feature selection**: Based on SHAP values and domain logic
-- **Class imbalance**: Used `scale_pos_weight` in XGBoost
-- **Model tuning**: RandomizedSearchCV with F1-score optimization
-- **Cross-validation**: 5-fold multilabel stratified
-- **Threshold tuning**: Custom threshold selection using precision-recall curve
-- **Explainability**: SHAP value plots for feature importance interpretation
+![Confusion Matrix](images/confusion_matrix_adhd.png)
 
-##  Performance
-- **Best Cross-Validated Macro F1 Score**: `0.65`
-- Optimized with hyperparameter tuning and feature filtering
-- Targeting improved accuracy by exploring:
-  - Feature engineering
-  - Class rebalancing techniques
-  - Ensemble stacking
-  - 
-## See notebook here
-https://www.kaggle.com/code/mugwewaithaka/notebook36201769b8
+---
+
+### 📊 Project Overview
+
+This project was submitted for the [WiDS Datathon 2025](https://www.kaggle.com/competitions/widsdatathon2025). The goal was to predict:
+
+* **ADHD\_Outcome** (binary classification)
+* **Sex\_F** (binary classification: 1 for female, 0 for male)
+
+The dataset includes cognitive, survey, and EEG-derived features.
+
+---
+
+### ⚙️ Tools & Libraries
+
+* Python (Pandas, NumPy, Matplotlib, Seaborn)
+* Scikit-learn
+* XGBoost
+* SHAP (for explainability)
+* Kaggle Notebook Environment
+
+---
+
+### 🧪 Methodology
+
+* Data Preprocessing (missing value handling, scaling)
+* Feature Engineering
+* Model Training using XGBoost Classifier
+* Hyperparameter Tuning
+* Threshold Optimization using F1 score
+* SHAP Explainability
+
+---
+
+### 🔍 Results
+
+#### ADHD Prediction
+
+* Optimized using F1 score
+* Precision-Recall AUC: **(insert your AUC here)**
+
+![ADHD PR Curve](images/adhd_precision_recall.png)
+
+#### SHAP Summary (ADHD)
+
+![SHAP ADHD](images/shap_adhd.png)
+
+#### Feature Importance (Top ADHD Predictors)
+
+![ADHD Feature Importance](images/adhd_top_features.png)
+
+---
+
+#### Sex\_F Prediction
+
+* Binary classification (Female = 1)
+
+![SHAP Sex](images/shap_sex.png)
+
+#### Feature Importance (Top Sex\_F Predictors)
+
+![Sex Feature Importance](images/sexf_top_features.png)
+
+---
+
+### 📁 Repo Contents
+
+* `notebook.ipynb` – Full training pipeline and analysis
+* `submission.csv` – Final predictions file for Kaggle
+* `images/` – Visualizations and explainability plots
+* `requirements.txt` – Package dependencies
+
+---
+
+### 🏅 Final Score
+
+* **F1 Score:** 0.56 (Targeting Top 10 with improvements)
+* [View Kaggle Notebook](INSERT_YOUR_NOTEBOOK_LINK_HERE)
+
+---
+
+### 📌 Future Work
+
+* Use deep learning models (MLP, TabNet)
+* Incorporate ensemble stacking
+* Explore EEG signal transformations (FFT, Wavelets)
+* Conduct more robust cross-validation
+
+---
 
