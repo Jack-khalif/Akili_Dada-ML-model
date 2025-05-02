@@ -8,8 +8,8 @@ To build a predictive model that determines:
 - The **biological sex** of a participant  
 using anonymized clinical measurements.
 
-## 🛠 Tools & Technologies Used
-- Python 🐍
+## Tools & Technologies Used
+- Python 
 - XGBoost (classification)
 - SHAP (model explainability)
 - Scikit-learn (preprocessing, metrics, CV)
@@ -33,5 +33,7 @@ using anonymized clinical measurements.
   - Feature engineering
   - Class rebalancing techniques
   - Ensemble stacking
-
+  - 
+## See notebook here
+https://www.kaggle.com/code/mugwewaithaka/notebook36201769b8
 
