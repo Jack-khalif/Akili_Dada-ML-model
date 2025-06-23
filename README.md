@@ -84,10 +84,10 @@ This repository showcases our **data science pipeline**, from preprocessing to e
 > *These visualizations give insight into how our model reasons and performs. (Replace image URLs with your actual links or filenames.)*
 
 **1. SHAP Summary Plot**
-![SHAP Summary](SHAP.png)
+![SHAP Summary](SHAPVALUE.png)
 
 **2. Confusion Matrix**
-![Confusion Matrix](DADAvisualize.png)
+![Confusion Matrix](DADAvisualization.png)
 
 **3. Feature Selction**
 ![Threshold Curve](feature.png)
