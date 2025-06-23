@@ -1,5 +1,3 @@
-
-
 # 🧠 Akili Dada – ML Model for Brain Health | WiDS 2025 Datathon
 
 Welcome to our winning contribution to the [WiDS Datathon 2025](https://www.kaggle.com/competitions/widsdatathon2025), where we tackled a deeply impactful challenge: **predicting female brain health outcomes (ADHD and biological sex)** using anonymized clinical and demographic data.
@@ -13,8 +11,8 @@ This repository showcases our **data science pipeline**, from preprocessing to e
 > **Objective**: Build a predictive model that classifies:
 >
 > * 🧠 Whether a participant has **ADHD**
-> * ⚧️ The **biological sex** of the participant
->   Based on anonymized clinical features.
+> * ⚧️ The **biological sex** of the participant  
+> Based on anonymized clinical features.
 
 ---
 
@@ -35,23 +33,19 @@ This repository showcases our **data science pipeline**, from preprocessing to e
 ## 🚀 Our ML Approach
 
 1. **Data Preprocessing**
-
    * Imputed missing values
    * Label encoded categorical features
 
 2. **Feature Engineering & Selection**
-
    * Feature importance analysis via **SHAP values**
    * Pruned irrelevant features using domain logic
 
 3. **Modeling Strategy**
-
    * Handled **class imbalance** with `scale_pos_weight` in XGBoost
    * Hyperparameter tuning via `RandomizedSearchCV` (optimized for macro F1)
    * Custom **threshold tuning** using precision-recall curves
 
 4. **Evaluation & Explainability**
-
    * Used **5-fold stratified CV** for robust evaluation
    * Visualized SHAP values to interpret feature contributions
 
@@ -66,31 +60,45 @@ This repository showcases our **data science pipeline**, from preprocessing to e
 
 🧪 We are continuously iterating on:
 
-* Feature interactions & polynomial features
-* Oversampling/undersampling (e.g., SMOTE)
+* Feature interactions & polynomial features  
+* Oversampling/undersampling (e.g., SMOTE)  
 * Ensemble models (e.g., stacking classifiers)
 
 ---
 
 ## 📌 Notebook Access
 
-🔗 **Explore the full notebook on Kaggle**
+🔗 **Explore the full notebook on Kaggle**  
 [📘 View Full Notebook](https://www.kaggle.com/code/mugwewaithaka/notebook36201769b8)
 
 ---
 
 ## 🖼 Sample Visualizations
 
-> *These visualizations give insight into how our model reasons and performs. (Replace image URLs with your actual links or filenames.)*
+> *These visualizations give insight into how our model reasons and performs.*
 
-**1. SHAP Summary Plot**
-![SHAP Summary](SHAPVALUE.png)
+<div align="center">
 
-**2. Confusion Matrix**
-![Confusion Matrix](DADAvisualization.png)
+<table>
+  <tr>
+    <td align="center">
+      <strong>SHAP Summary Plot</strong><br>
+      <img src="SHAPVALUE.png" alt="SHAP Summary" width="400"/>
+    </td>
+    <td align="center">
+      <strong>General Distribution Graphs</strong><br>
+      <img src="DADAvisualization.png" alt="Distribution Graphs" width="400"/>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <strong>Feature Selection</strong><br>
+      <img src="feature.png" alt="Feature Selection" width="500"/>
+    </td>
+  </tr>
+</table>
 
-**3. Feature Selction**
-![Threshold Curve](feature.png)
+</div>
 
 ---
 
@@ -100,5 +108,4 @@ A bold step forward by a passionate team committed to using **data science for s
 
 ---
 
-> *“We didn’t just build a model. We told a story about women’s health — through data.”*
-
+> _“We didn’t just build a model. We told a story about women’s health — through data.”_
